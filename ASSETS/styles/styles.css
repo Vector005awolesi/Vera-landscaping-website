@@ -1,0 +1,113 @@
+/* Import from Google Fonts for example */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&display=swap");
+:root {
+  /* 🌞 Light Mode - Theme 1 */
+  --lm1-main: #f9f5f0;
+  --lm1-secondary: #f2ead3;
+  --lm1-tertiary: #f4991a;
+  --lm1-main-green: #344f1f;
+
+  /* 🌿 Light Mode - Theme 2 */
+  --lm2-main: #556b2f;
+  --lm2-secondary: #8fa31e;
+  --lm2-tertiary: #c6d870;
+  --lm2-main-green: #eff5d2;
+
+  /* 🌙 Dark Mode Theme */
+  --dm-main: #0a400c;
+  --dm-secondary: #819067;
+  --dm-tertiary: #b1ab86;
+  --dm-additional: #fefae0;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+#hero-img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#navbar {
+  width: 90vw;
+  position: fixed;
+  top: 20px;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border: #cccccc6e solid 1px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(51, 50, 50, 0.438);
+  padding: 0px 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+ul.nav-link {
+  list-style: none;
+}
+ul.nav-link li {
+  display: inline-block;
+}
+
+ul.nav-link li a {
+  text-decoration: none;
+  color: #fff;
+  margin-inline: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 17px;
+  position: relative;
+  top: 8px;
+  font-weight: 300;
+  font-family: "lora", serif;
+  padding: 10px 5px 0;
+}
+ul.nav-link li a:hover {
+  color: var(--lm1-tertiary);
+}
+#nav_logo {
+  font-family: "lora", serif;
+  font-size: 1.2rem;
+  color: var(--lm1-main);
+  font-weight: 700;
+}
+#theme-btn {
+  background: none;
+  position:relative;
+  top:5px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+#theme-btn:hover {
+  color: var(--lm1-tertiary);
+}
