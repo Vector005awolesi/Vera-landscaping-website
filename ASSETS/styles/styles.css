@@ -211,6 +211,51 @@ button.ourStory:hover::before {
 }
 #about-svg {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
+}
+#servicesTitle {
+  color: var(--lm1-main);
+  margin-bottom: 20px;
+}
+#servicesSection {
+  position: relative;
+  margin-top: -1px;
+  padding: 6% 5%;
+  background: url("../images/gardening-work.jpg"),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.726),
+      rgba(0, 0, 0, 0.336),
+      rgba(0, 0, 0, 0.774)
+    );
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: var(--lm1-main);
+}
+#servicesCardsSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  gap: 40px;
+}
+.service-card {
+  width: 300px;
+  display: inline-block;
+}
+#seeMoreBtn {
+  display: block;
+  margin: 0 auto;
+}
+
+.service-icon {
+  font-size: 3rem !important;
+  color: var(--lm1-tertiary);
+  display: block;
+  margin-bottom: 20px;
 }
