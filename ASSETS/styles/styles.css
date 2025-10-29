@@ -1,5 +1,6 @@
 /* Import from Google Fonts for example */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400&display=swap");
+
 :root {
   /* 🌞 Light Mode - Theme 1 */
   --lm1-main: #f9f5f0;
@@ -47,6 +48,11 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--dm-main);
+}
 #fadeCarousel {
   /* max-width: 100%; */
   position: absolute;
@@ -55,7 +61,7 @@ h2 {
 }
 #heroText {
   z-index: 2;
-  padding: 15% 5%;
+  padding: 17% 5%;
   color: var(--lm1-main);
   display: inline-block;
   width: 65%;
@@ -63,7 +69,7 @@ h2 {
 #navbar {
   width: 95vw;
   position: fixed;
-  top: 20px;
+  top: 10px;
   background: transparent;
   backdrop-filter: blur(15px);
   display: block;
@@ -71,10 +77,31 @@ h2 {
   transform: translateX(-50%);
   z-index: 1000;
   border: #cccccc0e solid 1px;
-  border-radius: 30px;
-  box-shadow: 0 6px 10px rgba(20, 20, 20, 0.342);
+  border-radius: 25px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.342);
   padding: 0px 20px;
+  transition: 0.5s all;
 }
+#navbar.scrolled {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px, rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  background-color: var(--lm1-main);
+  transition: 0.5s all;
+}
+#navbar.scrolled ul.nav-link li a {
+  color: var(--dm-main);
+}
+#navbar.scrolled #nav_logo {
+  color: var(--lm1-main-green);
+}
+#navbar.scrolled #theme-btn {
+  color: var(--lm1-tertiary);
+}
+#navbar.scrolled #theme-btn:hover {
+  color: var(--dm-secondary);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -122,7 +149,8 @@ ul.nav-link li a:hover {
 #theme-btn:hover {
   color: var(--lm1-tertiary);
 }
-button.learnMoreBtn {
+button.learnMoreBtn,
+button.ourStory {
   background-color: var(--lm1-tertiary);
   padding: 10px;
   color: var(--lm1-main);
@@ -132,7 +160,8 @@ button.learnMoreBtn {
   width: 140px;
   position: relative;
 }
-button.learnMoreBtn:hover {
+button.learnMoreBtn:hover,
+button.ourStory:hover {
   width: 160px;
   background-color: var(--lm1-tertiary);
   padding: 10px;
@@ -141,18 +170,47 @@ button.learnMoreBtn:hover {
   font-size: 16px;
   transition: 0.5s;
 }
-button.learnMoreBtn:hover::before {
+
+button.learnMoreBtn:hover::before,
+button.ourStory:hover::before {
   position: absolute;
-  transition:.5s;
-  top: 10px;
+  transition: 0.5s;
+  top: 6px;
   left: 20px;
   color: var(--lm1-main);
   content: "> ";
   font-size: 20px;
   font-weight: 700;
-  contain-intrinsic-size: 1600px;
-  transform: translateX(-10px);
+  animation: move 500ms 1 linear;
 }
-button.learnMoreBrn:hover::before:hover{
-    transform:translateX(20px)
+@keyframes move {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+#aboutSection {
+  z-index: 2;
+  padding: 6% 5%;
+  position: relative;
+  background-color: var(--lm1-main);
+}
+#aboutImageSection,
+#aboutTextSection {
+  display: inline-block;
+  width: 45%;
+  margin-inline: 20px;
+}
+#about-img {
+  max-width: 100%;
+  position: relative;
+  top: -100px;
+  border-radius: 5px;
+}
+#about-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
