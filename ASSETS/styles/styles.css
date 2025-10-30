@@ -27,12 +27,10 @@
 }
 
 body {
-  font-family: "Lora", serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
 }
-
 h1,
 h2,
 h3 {
@@ -92,6 +90,9 @@ h2 {
 #navbar.scrolled ul.nav-link li a {
   color: var(--dm-main);
 }
+#navbar.scrolled ul.nav-link li a:hover{
+  color:var(--lm1-tertiary)
+}
 #navbar.scrolled #nav_logo {
   color: var(--lm1-main-green);
 }
@@ -125,14 +126,12 @@ ul.nav-link li a {
   position: relative;
   top: 8px;
   font-weight: 300;
-  font-family: "lora", serif;
   padding: 10px 5px 0;
 }
 ul.nav-link li a:hover {
   color: var(--lm1-tertiary);
 }
 #nav_logo {
-  font-family: "lora", serif;
   font-size: 1.2rem;
   color: var(--lm1-main);
   font-weight: 700;
@@ -264,7 +263,7 @@ button.ourStory:hover::before {
   background-color: var(--lm1-main-green);
   position: relative;
   padding: 50px 0;
-  height:700px
+  height:800px
 }
 #workContainer {
   background-color: var(--lm1-main);
@@ -278,7 +277,7 @@ button.ourStory:hover::before {
   transform: translateX(-50%);
 }
 .work-title {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 #workImageSection{
     padding:15px;
@@ -296,15 +295,20 @@ button.ourStory:hover::before {
   height: 250px;
   position:relative;
 }
-.workImage::before{
-  content:" ";
+.image-wrapper{
+  position: relative;;
+  overflow: hidden;
+  display: inline-block;
+}
+.image-wrapper::after{
+  content: " ";
   position:absolute;
-  top:0;
-  left:0;
-  width:250px;
-  height:250px;
-  border-radius:10px;
-   background: linear-gradient(to bottom , rgba(0, 0, 0, 0.726),
-      rgba(0, 0, 0, 0.336),
-      rgba(0, 0, 0, 0.774));
+  inset: 0;
+  background:linear-gradient(to top  ,rgba(0, 0, 0, 0.603) , rgba(27, 27, 27, 0.1));
+  mix-blend-mode: multiply;
+  z-index: 4;
+  border-radius: 10px;
+}
+#testimonialsSection{
+  padding: 6% 5%;
 }
