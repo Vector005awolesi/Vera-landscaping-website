@@ -148,6 +148,9 @@ ul.nav-link li a:hover {
 #theme-btn:hover {
   color: var(--lm1-tertiary);
 }
+#heroTitle{
+  color:var(--lm1-main)
+}
 button.learnMoreBtn,
 button.ourStory {
   background-color: var(--lm1-tertiary);
@@ -214,7 +217,7 @@ button.ourStory:hover::before {
   left: 0;
 }
 #servicesTitle {
-  color: var(--lm1-main);
+  color: var(--lm1-main) !important;
   margin-bottom: 20px;
 }
 #servicesSection {
@@ -246,6 +249,9 @@ button.ourStory:hover::before {
 .service-card {
   width: 300px;
   display: inline-block;
+}
+.workCardTitle{
+  color:#fff;
 }
 #seeMoreBtn {
   display: block;
@@ -309,6 +315,335 @@ button.ourStory:hover::before {
   z-index: 4;
   border-radius: 10px;
 }
-#testimonialsSection{
+#testimonialsSection {
   padding: 6% 5%;
+  background-color: var(--lm1-main);
 }
+
+#testimonialsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.testimonials {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialHead {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.stars {
+  color: var(--lm1-tertiary);
+  margin-bottom: 5px;
+}
+
+.stars i {
+  margin-right: 2px;
+}
+
+.customer-name {
+  color: var(--dm-main);
+  font-weight: 600;
+  margin: 0;
+}
+
+.testimonialBody {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+}
+
+.testimonialBody p {
+  margin: 0;
+}
+
+/* Contact Section Styles */
+#contactSection {
+  background-color: var(--lm1-main);
+  padding: 80px 20px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h3 {
+  color: var(--lm1-main-green);
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  margin-top: 30px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-icon {
+  color: var(--lm1-tertiary);
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.contact-item h4 {
+  margin: 0;
+  color: var(--lm1-main-green);
+}
+
+.contact-item p {
+  margin: 5px 0;
+}
+
+.contact-item small {
+  color: #666;
+}
+
+.contact-form {
+  flex: 2;
+  min-width: 400px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, var(--lm1-main-green), var(--lm1-tertiary));
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--lm1-main-green);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.form-input:focus {
+  border-color: var(--lm1-tertiary);
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(52, 79, 31, 0.1);
+}
+
+.form-input::placeholder {
+  color: #9e9e9e;
+  font-size: 14px;
+}
+
+.form-input::placeholder {
+  color: #adb5bd;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 30px;
+  padding: 8px 0;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio-option input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--lm1-main-green);
+  border-radius: 50%;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+}
+
+.radio-option input[type="radio"]:checked {
+  background-color: white;
+}
+
+.radio-option input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--lm1-main-green);
+  border-radius: 50%;
+}
+
+.radio-option input[type="radio"]:hover {
+  border-color: var(--lm1-tertiary);
+}
+
+select.form-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23344f1f' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.radio-option label {
+  margin: 0;
+  cursor: pointer;
+}
+
+.formSubmitBtn {
+  background-color: var(--lm1-main-green);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  width:80%;
+  text-align: center;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+.formSubmitBtn:hover {
+  background-color: var(--lm1-tertiary);
+  color: #fff;
+}
+
+.formSubmitBtn i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.formSubmitBtn:hover i {
+  transform: translateX(4px);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Form validation styles */
+/* Remove duplicate .form-input and submit-btn styles as they're defined above */
+
+/* Success message styles */
+.form-success {
+  background-color: rgba(52, 79, 31, 0.1);
+  color: var(--lm1-main-green);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid var(--lm1-main-green);
+  display: none;
+}
+
+.form-success.show {
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  
+  .contact-form {
+    min-width: 100%;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+/* Removed duplicate #contactSection */

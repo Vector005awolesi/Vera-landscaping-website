@@ -16,7 +16,6 @@
     <!-- TITLE -->
     <title>Vera Landscaping Services</title>
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="ASSETS/styles/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -30,6 +29,7 @@
     />
 
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="ASSETS/styles/styles.css" />
   </head>
   <body>
     <div id="headerSection">
@@ -46,9 +46,9 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <buttton id="theme-btn" class="btn"
-              ><i class="fas fa-moon theme-icon"></i
-            ></buttton>
+            <button id="theme-btn" class="btn">
+              <i class="fas fa-moon theme-icon"></i>
+            </button>
           </ul>
         </nav>
       </div>
@@ -140,7 +140,7 @@
     </div>
 
     <div id="servicesSection">
-      <h2 class="servicesTitle">OUR SERVICES</h2>
+      <h2 id="servicesTitle">OUR SERVICES</h2>
       <br />
 
       <div id="servicesCardsSection">
@@ -151,7 +151,7 @@
           data-aos-duration="1000"
         >
           <i class="fa-solid fa-seedling service-icon" aria-hidden="true"></i>
-          <h3>Lawn Care</h3>
+          <h3 class="workCardTitle">Lawn Care</h3>
           <p>
             Comprehensive lawn maintenance including mowing, fertilization,
             aeration, and weed control to keep your lawn healthy and vibrant.
@@ -164,7 +164,7 @@
           data-aos-duration="1000"
         >
           <i class="fa-solid fa-tree service-icon" aria-hidden="true"></i>
-          <h3>Garden Design</h3>
+          <h3 class="workCardTitle">Garden Design</h3>
           <p>
             Customized garden planning and planting services to create beautiful
             and functional outdoor spaces tailored to your preferences.
@@ -177,7 +177,7 @@
           data-aos-duration="1000"
         >
           <i class="fa-solid fa-border-all service-icon" aria-hidden="true"></i>
-          <h3>Hardscaping</h3>
+          <h3 class="workCardTitle">Hardscaping</h3>
           <p>
             Installation of patios, walkways, retaining walls, and other
             hardscape features to enhance the structure and aesthetics of your
@@ -193,49 +193,317 @@
         <h2 class="title work-title">OUR WORK</h2>
         <div id="workImageSection">
           <div class="image-wrapper" data-aos="zoom-in">
-            <img src="ASSETS/images/garden.jpg" alt="" class="workImage" />
+            <img
+              src="ASSETS/images/garden.jpg"
+              alt="Beautiful garden design with colorful flower beds"
+              class="workImage"
+            />
           </div>
           <div class="image-wrapper" data-aos="zoom-in" data-aos-delay="200">
             <img
               src="ASSETS/images/landscapework-3.jpg"
-              alt=""
+              alt="Professional landscaping project with stone pathways"
               class="workImage"
             />
           </div>
           <div class="image-wrapper" data-aos="zoom-in" data-aos-delay="400">
             <img
               src="ASSETS/images/landscapework-2.jpg"
-              alt=""
+              alt="Modern landscape design with water features"
               class="workImage"
             />
           </div>
           <div class="image-wrapper" data-aos="zoom-in" data-aos-delay="800">
             <img
               src="ASSETS/images/Backyard-Landscaping.jpg"
-              alt=""
+              alt="Elegant backyard transformation with custom landscaping"
               class="workImage"
             />
           </div>
           <div class="image-wrapper" data-aos="zoom-in" data-aos-delay="1000">
-            <img src="ASSETS/images/garden-woek.jpg" alt="" class="workImage" />
+            <img
+              src="ASSETS/images/garden-woek.jpg"
+              alt="Professional garden maintenance and design"
+              class="workImage"
+            />
           </div>
           <div class="image-wrapper" data-aos="zoom-in" data-aos-delay="1000">
-            <img src="ASSETS/images/landscape.jpg" alt="" class="workImage" />
+            <img
+              src="ASSETS/images/landscape.jpg"
+              alt="Custom landscape design with native plants"
+              class="workImage"
+            />
           </div>
         </div>
-        <button
-          class="btn learnMoreBtn"
-          data-aos="fade-up"
-          data-aos-delay="1200"
-        >
-          See more
-        </button>
+        <span data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">
+          <button class="btn learnMoreBtn">View Gallery</button>
+        </span>
       </div>
     </div>
 
     <div id="testimonialsSection">
       <h2 class="title">TESTIMONIALS</h2>
-      <br>
+      <br />
+      <div id="testimonialsContainer">
+        <div class="testimonials" data-aos="fade-up">
+          <div class="testimonialHead">
+            <div class="profile-section">
+              <img
+                src="https://randomuser.me/api/portraits/women/32.jpg"
+                alt="Sarah M. - satisfied customer"
+                class="testimonial-avatar"
+              />
+              <div class="profile-info">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="customer-name">Sarah M., Homeowner</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonialBody">
+            <p>
+              "Vera Landscaping transformed our yard beyond what we imagined.
+              The team was punctual, professional, and very thoughtful about the
+              plant choices. Our lawn has never looked better — neighbors keep
+              asking who did the work!"
+            </p>
+          </div>
+        </div>
+        <div class="testimonials" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonialHead">
+            <div class="profile-section">
+              <img
+                src="https://randomuser.me/api/portraits/men/45.jpg"
+                alt="James L. - satisfied customer"
+                class="testimonial-avatar"
+              />
+              <div class="profile-info">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="customer-name">James L., Property Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonialBody">
+            <p>
+              "Excellent service from consultation to completion. The design
+              options were creative and aligned with our budget. Maintenance
+              tips they provided made it easy to keep our garden thriving.
+              Highly recommend Vera Landscaping for any residential project."
+            </p>
+          </div>
+        </div>
+        <div class="testimonials" data-aos="fade-up" data-aos-delay="400">
+          <div class="testimonialHead">
+            <div class="profile-section">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Priya R. - satisfied customer"
+                class="testimonial-avatar"
+              />
+              <div class="profile-info">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="customer-name">Priya R., Homeowner</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonialBody">
+            <p>
+              "Quick, courteous, and detail-oriented. They added a beautiful
+              hardscape feature and updated our planting beds — the result feels
+              like a brand new outdoor room. The crew cleaned up perfectly each
+              day. Great value for the level of craftsmanship."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contactSection">
+      <div class="contact-container">
+        <h2 class="title">GET IN TOUCH</h2>
+        <div class="contact-wrapper">
+          <!-- Direct Contact Info -->
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Ready to Transform Your Space?</h3>
+            <p>Contact us for a free consultation and quote.</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-phone contact-icon"></i>
+                <div>
+                  <h4>Call Us</h4>
+                  <p>(555) 123-4567</p>
+                  <small>Monday - Friday: 8am - 6pm</small>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <div>
+                  <h4>Email Us</h4>
+                  <p>info@veralandscaping.com</p>
+                  <small>We respond within 24 hours</small>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-location-dot contact-icon"></i>
+                <div>
+                  <h4>Visit Us</h4>
+                  <p>123 Garden Street</p>
+                  <small>Denver, CO 80201</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form" data-aos="fade-left">
+            <form
+              id="landscapeForm"
+              name="landscape-contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              netlify-success-url="/thank-you"
+            >
+              <p class="hidden">
+                <label
+                  >Don't fill this out if you're human: <input name="bot-field"
+                /></label>
+              </p>
+              <input type="hidden" name="form-name" value="landscape-contact" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="form-input"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    class="form-input"
+                    pattern="[0-9\s\-\(\)\+]+"
+                    title="Please enter a valid phone number"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Service Interest *</label>
+                  <select
+                    id="service"
+                    name="service"
+                    required
+                    class="form-input"
+                  >
+                    <option value="">Select a Service</option>
+                    <option value="lawn-care">Lawn Care</option>
+                    <option value="garden-design">Garden Design</option>
+                    <option value="hardscaping">Hardscaping</option>
+                    <option value="maintenance">Regular Maintenance</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="property-size">Property Size (approx.)</label>
+                  <select
+                    id="property-size"
+                    name="property-size"
+                    class="form-input"
+                  >
+                    <option value="">Select Size</option>
+                    <option value="small">Small (< 1,000 sq ft)</option>
+                    <option value="medium">Medium (1,000-5,000 sq ft)</option>
+                    <option value="large">Large (5,000-10,000 sq ft)</option>
+                    <option value="xl">Extra Large (> 10,000 sq ft)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="form-input"
+                  placeholder="Tell us about your project, timeline, and any specific requirements..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>Preferred Contact Method *</label>
+                <div class="radio-group">
+                  <div class="radio-option">
+                    <input
+                      type="radio"
+                      id="prefer-email"
+                      name="preferred-contact"
+                      value="email"
+                      required
+                    />
+                    <label for="prefer-email">Email</label>
+                  </div>
+                  <div class="radio-option">
+                    <input
+                      type="radio"
+                      id="prefer-phone"
+                      name="preferred-contact"
+                      value="phone"
+                    />
+                    <label for="prefer-phone">Phone</label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn formSubmitBtn">
+                <i class="fas fa-paper-plane"></i> Request Free Quote
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- SCRIPTS -->
@@ -257,6 +525,36 @@
         once: true, // whether animation should happen only once
         mirror: false, // whether elements animate out while scrolling past them
       });
+
+      // Form validation
+      function validateForm(event) {
+        event.preventDefault();
+
+        const form = document.getElementById("landscapeForm");
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Basic email validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address");
+          return false;
+        }
+
+        // Phone validation (basic)
+        const phonePattern = /^[\d\s-()]+$/;
+        if (!phonePattern.test(phone)) {
+          alert("Please enter a valid phone number");
+          return false;
+        }
+
+        // Success - you would typically send this to a server
+        alert("Thank you for your inquiry! We will contact you soon.");
+        form.reset();
+        return false;
+      }
     </script>
   </body>
 </html>
