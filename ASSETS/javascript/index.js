@@ -6,4 +6,9 @@ window.addEventListener("scroll", function () {
     else{
         navbar.classList.remove("scrolled");
     }
-})
+});
+var navButton = document.querySelector("#navMenu");
+var navagationBar = document.querySelector("#navagationBar");
+navButton.addEventListener("click", function() {
+    navagationBar.classList.toggle("navagationBarActive")
+});
