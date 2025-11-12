@@ -10,5 +10,7 @@ window.addEventListener("scroll", function () {
 var navButton = document.querySelector("#navMenu");
 var navagationBar = document.querySelector("#navagationBar");
 navButton.addEventListener("click", function() {
-    navagationBar.classList.toggle("navagationBarActive")
+    navagationBar.classList.toggle("navagationBarActive");
+    var bodyContents = document.querySelector("#pageContents");
+    bodyContents.classList.togggle(".fadeContent")
 });
