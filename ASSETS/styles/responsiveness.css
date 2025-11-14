@@ -99,7 +99,7 @@
     padding: 12px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   :root {
     /* 🌞 Light Mode */
     --lm1-main: #f9f5f0;
@@ -430,6 +430,7 @@
     border-radius: 15px;
     left: 0;
     transform: translateX(0);
+    margin:0 auto;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.342);
   }
   .work-title {
@@ -949,11 +950,5 @@
   .form-row {
     flex-direction: column;
     gap: 0;
-  }
-}
-/* Removed duplicate #contactSection */
-
-@media screen and (min-width: 321px) and (max-width: 425px) {
-  @media screen and (min-width: 426px) and (max-width: 768px) {
   }
 }
