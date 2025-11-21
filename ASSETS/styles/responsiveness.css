@@ -197,7 +197,7 @@
     transition: 0.5s;
   }
   #navagationBar.navagationBarActive {
-    height: 50vh !important;
+    height: 52vh !important;
     padding: 20px;
   }
   #navbar.scrolled {
