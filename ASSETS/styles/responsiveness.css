@@ -341,16 +341,18 @@
   }
   #aboutSection {
     z-index: 2;
+    margin-top:10%;
     position: relative;
     background-color: var(--lm1-main);
   }
   .aboutHeader {
     font-size: 1.3rem;
+    margin-top:30px;
   }
   #aboutImageSection,
   #aboutTextSection {
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
     margin: 10px 0;
   }
