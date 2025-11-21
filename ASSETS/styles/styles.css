@@ -170,6 +170,15 @@ ul.nav-link li a {
 ul.nav-link li a:hover {
   color: var(--lm1-tertiary);
 }
+.contact-mobile-btn{
+  width:100%;
+  height:50px;
+  padding:10px;
+  display:none;
+  text-align: center;
+  background-color: var(--accent-orange);
+  color:var(--bg-primary);
+}
 #nav_logo {
   font-size: 1.2rem;
   color: var(--lm1-main);
